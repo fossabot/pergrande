@@ -1,27 +1,33 @@
-�I�����C���ƌv��V�X�e��
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkorai0001%2Fpergrande.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkorai0001%2Fpergrande?ref=badge_shield)
 
-�@ �\�t�g�̖ړI
-��҂ł���g�����A�ƌv������悤�Ǝv�������Ăł����������A����/�x�o�Ǘ��pWEB�A�v���P�[�V�����ł��B  
-WEB�C���^�[�t�F�C�X���g���Ď���/�x�o����͂������W�v���鎖���\�ł�  
-PC�p��ʂƁA�X�}�[�g�t�H���p�̉�ʂ�����܂�  
+オンライン家計簿システム
+
+① ソフトの目的
+作者である紅雷が、家計簿をつけようと思い立ってでっちあげた、収入/支出管理用WEBアプリケーションです。  
+WEBインターフェイスを使って収入/支出を入力し検索集計する事が可能です  
+PC用画面と、スマートフォン用の画面があります  
  
-�A ���C�Z���X  
-���̃A�v���P�[�V�����Ɋ܂܂��\�[�X�ꎮ�́A  
-���ׂ�GPL v2.0�̃��C�Z���X�ɂ����čĔЕz�������邱�ƂƂ��܂��B  
-GPL v2.0�Ɋւ���ڂ�������  
+② ライセンス  
+このアプリケーションに含まれるソース一式は、  
+すべてGPL v2.0のライセンスにおいて再頒布を許可することとします。  
+GPL v2.0に関する詳しい情報は  
 http://www.gnu.org/licenses/gpl-2.0.html  
-�Ŋm�F���Ă��������B  
-�܂��A�������̃A�v���P�[�V������GPL v3.0�ȍ~��  
-���C�Z���X���ڍs���邱�Ƃ͂���܂���B  
+で確認してください。  
+また、将来このアプリケーションがGPL v3.0以降に  
+ライセンスを移行することはありません。  
   
-�B�ݒ���@  
-mysql��php�����삷��T�[�o�[��p�ӂ��܂�  
-kakeibo/kakeibo�Ƃ������[�U�[��p�ӂ��A������DB��p�ӂ��܂�  
-(WEB�T�[�o�[�ƈႤ�}�V����DB������ꍇ�Aconfig.php�����������Ă�������)  
-setup�t�H���_����create.sql�y��insert.sql�̃f�[�^�𗬂�����Ńe�[�u���Ə����f�[�^��ݒ肵�܂�  
+③設定方法  
+mysqlとphpが動作するサーバーを用意します  
+kakeibo/kakeiboというユーザーを用意し、同名のDBを用意します  
+(WEBサーバーと違うマシンにDBがある場合、config.phpを書き換えてください)  
+setupフォルダ内のcreate.sql及びinsert.sqlのデータを流し込んでテーブルと初期データを設定します  
   
-�Ǘ����[�U�[�Ƃ���admin/password�Ń��O�C���ł��郆�[�U�[�������f�[�^�ŗ�������ł��܂��̂ŁA  
-���̃��[�U�[�ŁA���O�C�����A�Ǘ���ʂŎ������g������Ă��������B  
+管理ユーザーとしてadmin/passwordでログインできるユーザーを初期データで流し込んでいますので、  
+そのユーザーで、ログインし、管理画面で自分自身を作ってください。  
   
-�킩���Ă�Ǝv�����ǁA�p�X���[�h�̈Í������͂����Ƃ����̂ɕς��ĉ^�p�������������Ǝv����  
-�f�t�H���g�Ŏd����ł�����͈̂Í��Ƃ͂����������㕨��  
+わかってると思うけど、パスワードの暗号方式はちゃんとしたのに変えて運用した方がいいと思うよ  
+デフォルトで仕込んであるものは暗号とはいいがたい代物だ  
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkorai0001%2Fpergrande.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkorai0001%2Fpergrande?ref=badge_large)
